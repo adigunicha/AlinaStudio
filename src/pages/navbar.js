@@ -43,7 +43,7 @@ const Navbar = () => {
           
             
             {/* desktop nav */}
-        <div className={ ` hidden sm:h-3 md:flex  pl-3 md:pl-0 space-y-6 md:space-y-0 flex-col md:flex-row md:space-x-6 font-semibold md:items-center`}>
+        <div className={ ` hidden sm:h-3 lg:flex  pl-3 md:pl-0 space-y-6 md:space-y-0 flex-col md:flex-row md:space-x-6 font-semibold md:items-center`}>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/portfolio'>Portfolio</NavLink>
@@ -52,7 +52,7 @@ const Navbar = () => {
           
 
           {/* social icons  */}
-           <div className="md:flex hidden space-x-4">
+           <div className="lg:flex hidden space-x-4">
                <SlSocialFacebook size='15px'/>
                <SlSocialInstagram size='15px'/>
                <BsTwitterX size='15px'/>
@@ -66,13 +66,13 @@ const Navbar = () => {
 
             
                {/* menubar */}
-         <div className={`${open?'hidden':'flex'} items-center flex-row md:hidden`}>
+         <div className={`${open?'hidden':'flex'} items-center flex-row lg:hidden`}>
            <div className=' flex justify-between '>
               <button className='absolute top-7  right-8' to='' onClick={()=>{setopen(!open)}} ><CiMenuBurger size={20} /></button>
                 </div>
               </div>
               {/* cancel btn */}
-              <div className={`${open?'flex':'hidden'} items-center flex-row md:hidden`}>
+              <div className={`${open?'flex':'hidden'} items-center flex-row lg:hidden`}>
            <div className=' flex justify-between '>
               <button className='absolute top-7  right-8' to='' onClick={()=>{setopen(!open)}} ><MdOutlineCancel size={20} /></button>
              </div>

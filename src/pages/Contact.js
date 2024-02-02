@@ -6,9 +6,9 @@ import { transition1 } from '../transitions';
 
 const Contact = () => {
   return (
-    <motion.section initial={{opacity:0,y:'100%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'100%'}} transition={transition1} className='mt-24 h-[100vh] md:mt-52 p-4 bg-blue-100   md:pl-36'>
+    <motion.section initial={{opacity:0,y:'100%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'100%'}} transition={transition1} className='mt-24 h-full lg:mt-52 p-4 bg-blue-100   lg:pl-36'>
 
-      <div className='grid md:gap-16 md:grid-cols-2'>
+      <div className='grid md:gap-16 lg:grid-cols-2'>
          <motion.div initial={{opacity:0,y:'80%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'80%'}} transition={transition1} className='flex flex-col gap-q md:gap-3'>
             <span className='md:text-6xl text-2xl font-bold'>Contact Me</span>
             <span>I would love to get suggestions from you </span>
@@ -21,7 +21,7 @@ const Contact = () => {
             <Link className=' mt-2 md:mt-5 md:w-[110px] w-[100px] font-bold flex justify-center items-end py-2 bg-black text-white' to=''>Hire Me</Link>
          </motion.div>
 
-         <div className=' flex justify-center items-center md:mt-[-8rem]'>
+         <div className=' flex justify-center items-center lg:mt-[-8rem]'>
           <motion.img initial={{scale:0}} animate={{scale:1}} exit={{opacity:0,y:'100%'}} transition={transition1} className='md:h-[600px] md:w-[400px] h-[400px] w-[250px] ' src={heroimg} alt='heroimg'/>
          </div>
       </div>

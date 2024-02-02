@@ -8,12 +8,12 @@ import { transition1 } from '../transitions';
 
 const Portfolio = () => {
   return (
-    <section className='pt-24 md:pt-52 p-4   md:pl-36'>
+    <section className='pt-24 lg:pt-52 p-4   lg:pl-36'>
 
-      <motion.div initial={{opacity:0,y:'100%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'100%'}} transition={transition1}  className='flex md:gap-16 gap-5 flex-col md:flex-row'>
+      <motion.div initial={{opacity:0,y:'100%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'100%'}} transition={transition1}  className='flex md:gap-16 gap-5 flex-col lg:flex-row'>
         <div className='flex md:gap-5 gap-2 flex-col'>
          <span className='md:text-6xl text-2xl font-bold'>Portfolio </span>
-         <motion.div initial={{opacity:0,y:'80%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'80%'}} transition={transition1}  className='md:w-[400px] md:text-base text-[16px] flex flex-col gap-3'>
+         <motion.div initial={{opacity:0,y:'80%'}} animate={{opacity:1,y:0}} exit={{opacity:0,y:'80%'}} transition={transition1}  className='lg:w-[400px] md:text-base text-[16px] flex flex-col gap-3'>
           <span>
              Welcome to my visual journey! I am [Your Name], a passionate photographer dedicated to capturing the essence of moments. Here's a glimpse into my world through the lens.
              </span>
@@ -24,10 +24,10 @@ const Portfolio = () => {
         </div>
 
         <div className='grid md:mt-[-2rem] gap-1 md:gap-3 grid-cols-2'>
-            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='md:w-[300px] rounded-br-lg md:h-[200px] ' src={img1} alt='img1'/>
-            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='md:w-[300px] rounded-bl-lg md:h-[200px] ' src={img2} alt='img1'/>
-            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='md:w-[300px] rounded-tr-lg md:h-[200px] ' src={img3} alt='img1'/>
-            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='md:w-[300px] rounded-tl-lg md:h-[200px] ' src={img4} alt='img1'/>
+            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='lg:w-[300px] rounded-br-lg lg:h-[200px] w-full ' src={img1} alt='img1'/>
+            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='lg:w-[300px] rounded-bl-lg lg:h-[200px] w-full ' src={img2} alt='img1'/>
+            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='lg:w-[300px] rounded-tr-lg lg:h-[200px] w-full  ' src={img3} alt='img1'/>
+            <motion.img whileHover={{scale:1.05}} transition={transition1}  className='lg:w-[300px] rounded-tl-lg lg:h-[200px] w-full  ' src={img4} alt='img1'/>
         </div>
 
       </motion.div>
